@@ -1,6 +1,6 @@
 {
   "TAKE_N": "Nimm %n",
   "RESTART": "Neustart",
-  "HUMAN_WINS": "Sie haben gewonnen!",
+  "HUMAN_WINS": "Du hast gewonnen!",
   "COMPUTER_WINS": "Die KI hat gewonnen!"
 }
