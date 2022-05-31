@@ -1,0 +1,72 @@
+$stick-container-y-padding: 50px;
+
+[data-component="nim-game"] {
+  position: relative;
+  padding: 1em;
+}
+
+.stick-container {
+  padding: $stick-container-y-padding 1em;
+  position: relative;
+}
+
+.stick {
+  background-image: url('../../static/img/pencil.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 0;
+  padding-bottom: 600%;
+
+  opacity: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: opacity 1s, margin-top 0.75s, margin-bottom 0.75s;
+
+  &.taken {
+    opacity: 0;
+  }
+
+  &.taken-n {
+    margin-top: -1 * $stick-container-y-padding;
+  }
+
+  &.taken-s {
+    margin-top:  $stick-container-y-padding;
+    margin-bottom: -1 * $stick-container-y-padding;
+  }
+}
+
+.message-box-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.5s, transform 0.5s;
+
+  &.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.message-box {
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.2em 0.8em;
+}
+
+.input-pane {
+  padding: 1em;
+}

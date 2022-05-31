@@ -1,0 +1,57 @@
+[data-component="nim-game"] {
+  position: relative;
+  padding: 1em; }
+
+.stick-container {
+  padding: 50px 1em;
+  position: relative; }
+
+.stick {
+  background-image: url(0befa5f073b9bb9f814b.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 0;
+  padding-bottom: 600%;
+  opacity: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: opacity 1s, margin-top 0.75s, margin-bottom 0.75s; }
+  .stick.taken {
+    opacity: 0; }
+  .stick.taken-n {
+    margin-top: -50px; }
+  .stick.taken-s {
+    margin-top: 50px;
+    margin-bottom: -50px; }
+
+.message-box-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.5s, transform 0.5s; }
+  .message-box-container.visible {
+    opacity: 1;
+    transform: scale(1); }
+
+.message-box {
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.2em 0.8em; }
+
+.input-pane {
+  padding: 1em; }
+
+
+/*# sourceMappingURL=default.9765ca1cad41dfc13e84.css.map*/
